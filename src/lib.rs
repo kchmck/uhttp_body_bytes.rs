@@ -4,7 +4,7 @@
 //! request headers as well as some initial chunk of the request body.
 //!
 //! This iterator can yield the bytes in that partial chunk, then reuse the entire buffer
-//! to read further body chunks and yield the bytes from those. It can be fed, for
+//! to read further body chunks and yield the bytes from those. The result can be fed, for
 //! example, into a byte-based parser such as
 //! [serde_json::from_iter](https://docs.serde.rs/serde_json/de/fn.from_iter.html).
 //!

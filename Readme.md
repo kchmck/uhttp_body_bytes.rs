@@ -8,8 +8,8 @@ a `TcpStream` into a fixed-size buffer. such that after a read the buffer contai
 request headers as well as some initial chunk of the request body.
 
 This iterator can yield the bytes in that partial chunk, then reuse the entire buffer
-to read further body chunks and yield the bytes from those. It can be fed, for example,
-into a byte-based parser such as
+to read further body chunks and yield the bytes from those. The result can be fed, for
+example, into a byte-based parser such as
 [serde_json::from_iter](https://docs.serde.rs/serde_json/de/fn.from_iter.html).
 
 ## Example
@@ -53,7 +53,7 @@ adding it as a dependency in `Cargo.toml`:
 
 ```toml
 [dependencies]
-uhttp_body_bytes = "0.5.0"
+uhttp_body_bytes = "0.5.1"
 ```
 and importing it in the crate root:
 

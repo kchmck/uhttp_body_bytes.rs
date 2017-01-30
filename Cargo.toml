@@ -1,6 +1,6 @@
 [package]
 name = "uhttp_body_bytes"
-version = "0.5.0"
+version = "0.5.1"
 authors = ["Mick Koch <mick@kochm.co>"]
 description = "Iterator for HTTP request body bytes"
 license = "MIT"
