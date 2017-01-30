@@ -1,0 +1,9 @@
+[package]
+name = "uhttp_body_bytes"
+version = "0.5.0"
+authors = ["Mick Koch <mick@kochm.co>"]
+description = "Iterator for HTTP request body bytes"
+license = "MIT"
+documentation = "https://docs.rs/uhttp_body_bytes"
+repository = "https://github.com/kchmck/uhttp_body_bytes.rs"
+keywords = ["http", "request", "body", "bytes"]
