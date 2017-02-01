@@ -1,7 +1,7 @@
 //! This crate provides an iterator that yields the bytes in an HTTP request body. In
 //! particular, it provides convenience for the use case where data is read directly from
-//! a `TcpStream` into a fixed-size buffer. such that after a read the buffer contains the
-//! request headers as well as some initial chunk of the request body.
+//! a `TcpStream` into a fixed-size buffer and, after the first read, the buffer contains
+//! the request headers as well as some initial chunk of the request body.
 //!
 //! This iterator can yield the bytes in that partial chunk, then reuse the entire buffer
 //! to read further body chunks and yield the bytes from those. The result can be fed, for
